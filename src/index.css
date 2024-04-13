@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-100;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Quicksand, Courier, monospace;
+}
+
+.flex_center {
+    @apply flex justify-center items-center;
+}
+.flex_between {
+    @apply flex justify-between items-center;
+}
+
+span {
+    @apply underline text-customPurpleBlue cursor-pointer;
+}
+
+/* css for text with line start here */
+
+.text_with_line {
+    overflow: hidden;
+    text-align: center;
+}
+
+.text_with_line::before,
+.text_with_line::after {
+    background-color: #bababa;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.text_with_line::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.text_with_line::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* css for text with line end here */
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.boxShadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 5px 8.6px;
+}
+.main_container{
+    @apply w-full flex flex-col h-full rounded-lg my-2 p-2;
+}
+
+.text_primary{
+    @apply font-semibold text-gray-700;
+}
+.text_secondary{
+    @apply font-medium text-sm text-gray-500;
+}
+.text_small{
+    @apply font-medium text-xs text-gray-500;
+}
+
+.input_field{
+    @apply h-12 w-full text-sm font-medium outline-none px-3 rounded-lg bg-gray-100 my-3;
+}
+
+.back_arrow{
+    @apply border bg-gray-200 rounded-sm cursor-pointer;
+}
+
+.btn{
+    @apply w-full h-10 rounded-xl [background:linear-gradient(270deg,_#7b91ff,_#95beff)] text-white font-medium;
+}
+
+.alertWithIcon{
+    @apply w-full rounded-xl h-12 font-medium flex items-center px-2;
+}
+.gradientBg{
+    @apply [background:linear-gradient(300deg,_#ffffff,#a6c7ff)];
+}
