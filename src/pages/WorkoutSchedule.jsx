@@ -29,7 +29,7 @@ const WorkoutSchedule = () => {
             <div className='absolute bottom-36 left-72 w-14 bg-purple-400 text-white aspect-square border flex_center rounded-full cursor-pointer'><Plus strokeWidth={1.5} /></div>
             <h2 className='absolute bottom-[28.3rem] left-40 w-fit px-2 bg-purple-400 text-white flex_center rounded-full cursor-pointer text-xs font-medium py-1'>Ab Workout, 7:30am</h2>
             <h2 className='absolute bottom-[24.4rem] left-20 w-fit px-2 bg-purple-400 text-white flex_center rounded-full cursor-pointer text-xs font-medium py-1'>Upper body Workout, 9pm</h2>
-            <h2 className='absolute bottom-56 left-20 w-fit px-2 bg-slate-100 text-gray-700 flex_center rounded-full cursor-pointer text-xs font-medium py-1'>Lower body Workout, 3pm</h2>
+            {/* <h2 className='absolute bottom-56 left-20 w-fit px-2 bg-slate-100 text-gray-700 flex_center rounded-full cursor-pointer text-xs font-medium py-1'>Lower body Workout, 3pm</h2> */}
             <Menubar/>
         </div>
     )
